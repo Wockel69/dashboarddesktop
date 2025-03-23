@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 16% 16%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 16% 16%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 16% 16%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 220 16% 16%;
+
+    --secondary: 220 5% 82%;
+    --secondary-foreground: 220 16% 16%;
+
+    --muted: 220 5% 30%;
+    --muted-foreground: 220 5% 65%;
+
+    --accent: 220 5% 82%;
+    --accent-foreground: 220 16% 16%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 158 64% 52%;
+    --success-foreground: 158 64% 15%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 92% 15%;
+
+    --info: 262 51% 49%;
+    --info-foreground: 262 51% 15%;
+
+    --border: 220 5% 30%;
+    --input: 220 5% 30%;
+    --ring: 213 15% 65%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .sidebar {
+    @apply fixed left-0 top-0 z-40 h-screen w-[200px] bg-[#1f2634] text-[#f7f8f8] transition-all duration-200;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .main-content {
+    @apply ml-[200px] p-5 pt-4 transition-all duration-200;
+  }
+
+  .section-header {
+    @apply flex items-center justify-between mb-4;
+  }
+
+  .stat-card {
+    @apply flex flex-col bg-card rounded-md p-4 shadow-sm;
+  }
+
+  .stat-value {
+    @apply text-2xl font-bold;
+  }
+
+  .stat-label {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .stat-icon {
+    @apply flex h-8 w-8 items-center justify-center rounded-full;
+  }
+
+  .badge-active {
+    @apply bg-success/20 text-success;
+  }
+
+  .badge-inactive {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  .badge-alert {
+    @apply bg-destructive/20 text-destructive;
+  }
+
+  .notification-item {
+    @apply border-l-4 p-4 mb-2 rounded-r-md;
+  }
+
+  .notification-item-system {
+    @apply border-l-info bg-info/10;
+  }
+
+  .notification-item-feature {
+    @apply border-l-success bg-success/10;
+  }
+
+  /* Add responsive styles for mobile */
+  @media (max-width: 768px) {
+    .sidebar {
+      @apply w-[60px];
+    }
+
+    .sidebar-label {
+      @apply hidden;
+    }
+
+    .main-content {
+      @apply ml-[60px] p-3;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+[images]
+  remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*"]
+
+# Instagram Dashboard Netlify Configuration
+# Build settings
+[build]
+  command = "bun run build"
+  publish = ".next"
+
+# Simplified Netlify configuration for static site deployment
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

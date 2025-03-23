@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/page": "/",
+  "/test-user/page": "/test-user",
+  "/(auth)/forgot-password/page": "/forgot-password",
+  "/(auth)/login/page": "/login",
+  "/(dashboard)/dashboard/page": "/dashboard",
+  "/(dashboard)/plaene/page": "/plaene",
+  "/(dashboard)/mein-profil/page": "/mein-profil",
+  "/(dashboard)/page": "/",
+  "/(dashboard)/zielgruppe/page": "/zielgruppe",
+  "/(auth)/reset-password/page": "/reset-password"
+}

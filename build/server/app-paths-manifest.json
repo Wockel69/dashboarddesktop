@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/test-user/page": "app/test-user/page.js",
+  "/(auth)/forgot-password/page": "app/(auth)/forgot-password/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
+  "/(dashboard)/plaene/page": "app/(dashboard)/plaene/page.js",
+  "/(dashboard)/mein-profil/page": "app/(dashboard)/mein-profil/page.js",
+  "/(dashboard)/page": "app/(dashboard)/page.js",
+  "/(dashboard)/zielgruppe/page": "app/(dashboard)/zielgruppe/page.js",
+  "/(auth)/reset-password/page": "app/(auth)/reset-password/page.js"
+}
